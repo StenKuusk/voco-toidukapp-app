@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# VOCO Toidukapi Rakendus
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Ülevaade
+VOCO toidukapi rakendus on veebipõhine platvorm, mis aitab hallata toidukappi, mis on mõeldud ülejäänud kõlbliku toidu jagamiseks. Rakendus pakub kasutajatele mugavat viisi toidu lisamiseks, leidmiseks ja jagamiseks, edendades samal ajal toidujäätmete vähendamist ja kogukondlikku vastutustunnet.
 
-## Available Scripts
+## Funktsionaalsus
+- **Toidu haldamine**: Kasutajad saavad lisada uusi toiduaineid, vaadata olemasolevat toiduainete nimekirja ning eemaldada toiduaineid, kui need on võetud.
+- **Otsing ja filtreerimine**: Kasutajad saavad otsida toiduaineid nime või kategooria järgi ning filtreerida toiduaineid säilivuse järgi.
+- **Kapi info**: Rakendus kuvab kapi asukoha, lahtiolekuajad ja reeglid toidu lisamiseks.
+- **Administraatori paneel**: Administraatorid saavad hallata kapi sisu, vaadata logisid ja kustutada aegunud toiduaineid.
 
-In the project directory, you can run:
+## Tehnilised nõuded
+- Veebirakendus, mis on mobiilisõbralik.
+- Erinevad ligipääsuõigused administraatoritele ja kasutajatele.
+- Andmebaas toiduainete, kasutajate ja kapi kohta.
+- Reaalajas uuendused ilma lehe värskendamiseta.
 
-### `npm start`
+## Kestlikkuse eesmärgid
+- Toidujäätmete vähendamine.
+- Kogukondlik vastutustunne ja koostöö.
+- Keskkonnasäästlikkus ja säästlik tarbimine.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Eeldatav ajakava
+1. Esialgne analüüs ja disain
+2. Andmebaasi ja API loomine
+3. Kasutajaliidese arendus
+4. Testimine ja parandused
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Kuidas alustada
+1. Kloneeri projekt: `git clone <repo-url>`
+2. Installi sõltuvused: `npm install`
+3. Käivita rakendus: `npm start`
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Kontakt
+Küsimuste korral palun võtke ühendust [kontaktinfo]@example.com.
