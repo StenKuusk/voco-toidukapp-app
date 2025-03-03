@@ -1,0 +1,9 @@
+.App-logo {
+    display: flex;
+    width: 375px;
+    height: 104px;
+    padding: var(--component-default, 16px) var(--vertikaalne, 24px) 0px var(--vertikaalne, 24px);
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}

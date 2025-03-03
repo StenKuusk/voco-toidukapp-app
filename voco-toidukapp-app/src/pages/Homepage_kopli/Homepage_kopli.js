@@ -1,10 +1,40 @@
 import React, { useState } from 'react';
 import './Homepage_kopli.css';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-const Home = ({ foods }) => {
+
+const HomepageKopli = () => {
   const [selectedLocation, setSelectedLocation] = useState('Kopli');
 
+  const foods = [
+    { name: 'Banoania', expiry: '01.03.2025', location: 'Kopli', image: '/assets/food/banana.png' },
+    { name: 'Söörikud', expiry: '27.02.2025', location: 'Kopli', image: '/assets/food/donut.png' },
+    { name: 'Sai', expiry: '10.03.2025', location: 'Kopli', image: '/assets/food/bread.png' },
+  ];
+
   const filteredFoods = foods.filter(food => food.location === selectedLocation);
+
+
+  const sliderSettings = {
+    dots: true,
+    infinite: true, 
+    speed: 500, 
+    slidesToShow: 3, 
+    slidesToScroll: 1, 
+    arrows: true, 
+    responsive: [
+      {
+        breakpoint: 768, 
+        settings: {
+          slidesToShow: 1, 
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
 
   return (
     <div className="home-container">
@@ -29,7 +59,8 @@ const Home = ({ foods }) => {
       <h3 className="food-header">Viimati lisatud toidud</h3>
       <div className="food-list">
         {filteredFoods.length > 0 ? (
-          filteredFoods.slice(0, 3).map((food, index) => ( 
+        <Slider {...sliderSettings}>
+          {filteredFoods.map((food, index) => ( 
             <div key={index} className="food-item">
               <img src={food.image} alt={food.name} className="food-image" />
               <div className="food-details">
@@ -38,7 +69,8 @@ const Home = ({ foods }) => {
               </div>
               <p className="food-time">10:00</p> 
             </div>
-          ))
+          ))}
+          </Slider>
         ) : (
           <div className="no-food">
             <img src="/assets/logos/img6.svg" alt="No food" className="no-food-image" />
@@ -53,4 +85,4 @@ const Home = ({ foods }) => {
   );
 };
 
-export default Home;
+export default HomepageKopli;

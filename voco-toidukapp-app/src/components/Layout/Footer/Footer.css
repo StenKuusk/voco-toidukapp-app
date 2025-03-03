@@ -8,9 +8,24 @@
     padding: 10px 0;
   }
   
-  .footer-button {
-    background: none;
+  .circle-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
     border: none;
-    color: white;
+    color: #03624C;
     font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
