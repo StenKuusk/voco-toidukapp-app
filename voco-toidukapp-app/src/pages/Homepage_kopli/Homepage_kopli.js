@@ -15,8 +15,7 @@ const HomepageKopli = () => {
   ];
 
   const filteredFoods = foods.filter(food => food.location === selectedLocation);
-
-
+  
   const sliderSettings = {
     dots: true,
     infinite: true, 
