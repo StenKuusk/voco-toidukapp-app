@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from '../images/logos/logo.svg'; // Asenda õige logofaili teega
 
 const Header = ({ onMenuClick }) => {
   return (
     <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
+      <img src='/assets/logos/logo.svg' className="App-logo" alt="logo" />
+      <h1 className="app-title">Food Sharing VOCO</h1>
       <button className="menu-button" onClick={onMenuClick}>Menu</button>
     </header>
   );

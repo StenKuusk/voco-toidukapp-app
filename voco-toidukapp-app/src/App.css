@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #15d144;
+  background-color: #00DF82;
 }
 
 .App-logo {
@@ -35,46 +35,3 @@
   padding: 20px;
 }
 
-.promo-logo {
-  height: 150px;
-  margin-right: 10px;
-}
-
-.toggle-buttons button {
-  margin: 5px;
-}
-
-.food-list {
-  display: flex;
-  overflow-x: scroll;
-}
-
-.food-item {
-  margin: 10px;
-}
-
-.App-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-color: #15d144;
-  padding: 10px 0;
-}
-
-.footer-button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 24px;
-}
-
-.no-food {
-  text-align: center;
-}
-
-.no-food img {
-  height: 200px;
-  margin-bottom: 10px;
-}
