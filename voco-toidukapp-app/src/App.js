@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import './App.css';
-import Header from './components/Header';
-import Home from './components/Home';
-import Footer from './components/Footer';
-import AddFood from './components/AddFood';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from '../src/pages/Homepage_kopli';
+
 
 function App() {
   const [foods, setFoods] = useState([]);
@@ -18,12 +16,12 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Header onMenuClick={handleMenuClick} />
-      <Home foods={foods} />
-      <Footer />
-      {showAddFood && <AddFood onAdd={handleAddFood} />}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
