@@ -1,39 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 .home-container {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #e0f7e0;
-    min-height: 100vh;
+    min-height: 78vh;
     padding-bottom: 90px;
 }
 
 .promo-section {
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px;
     background-color: #00DF82;
-    color: white;
+    color: #021A1A;
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-text-container {
+    background-color: transparent;
+    padding: 10px 15px;
+    margin: 0 auto 20px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    max-width: 600px; 
+    width: 90%;
+    justify-content: center;
+    margin-left: 80px;
 }
 
 .promo-text {
     font-family: Poppins;
-    font-size: 25px;
-    font-style: bold;
-    font-weight: 500;
-    line-height: 38px;
-    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #021A1A;
+    margin: 0;
+    text-align: left;
+    word-wrap: break-word;
 }
 
 .promo-logo {
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
-    margin-top: 10px;
+    margin-top: 20px;
+    position: relative;
 }
 
 .toggle-buttons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     padding: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 48px;
+    max-width: 160px;
+    margin: 0 auto;
 }
 
 .toggle-buttons button {
@@ -46,6 +71,7 @@
     color: black;
     font-family: Poppins;
     transition: background-color 0.3s;
+    flex: 1;
 }
 
 .toggle-buttons button.active {
@@ -60,64 +86,121 @@
     padding: 0 20px;
     font-size: 1.1rem;
     color: #333;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .food-list {
     padding: 20px;
-    gap: 15px;
+    overflow: hidden;
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+.custom-carousel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-items {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 223, 130, 0.8);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.carousel-control:hover {
+    background: #03624C;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
 }
 
 .food-item {
-    background-color: white;
-    border-radius: 8px;
-    padding: 10px;
+    background: #00DF82; 
+    border-radius: 16px;  
+    padding: 16px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 5px; 
+    text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
+    gap: 8px;
+    width: 130px; 
+    height: 180px; 
+    box-sizing: border-box; 
+}
+
+.food-image-container {
+    position: relative;
+    width: 100%;
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px; 
+    height: 20px; 
+    z-index: 1;
 }
 
 .food-image {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 5px;
+    width: auto; 
+    height: 80px; 
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: transparent;
 }
 
 .food-details {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .food-name {
-    margin: 0;
-    font-size: 1rem;
-    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 5px 0;
 }
 
 .food-expiry {
+    font-size: 14px;
+    color: #444;
     margin: 0;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.food-time {
-    font-size: 0.8rem;
-    color: #888;
-    margin-left: auto;
-}
-
-.slick-slide {
-    padding: 0 5px;
-}
-
-.slick-dots {
-    bottom: -25px;
-}
-
-.slick-prev, .slick-next {
-    z-index: 1;
-    color: #00DF82;
 }
 
 .no-food {
@@ -126,8 +209,8 @@
 }
 
 .no-food-image {
-    max-width: 100px;
-    height: auto;
+    width: 223px;
+    height: 89px;
 }
 
 .no-food p {
@@ -154,31 +237,58 @@
 
 @media (max-width: 768px) {
     .food-list {
-        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .promo-logo {
     }
 
     .toggle-buttons {
-        flex-direction: column;
-        gap: 5px;
+        flex-direction: row;
+        gap: 10px;
+        height: 40px;
     }
 
     .toggle-buttons button {
-        width: 100%;
-        padding: 15px;
+        font-size: 16px;
+        padding: 8px 15px;
     }
 
     .view-all-button {
         width: 90%;
         margin: 20px auto;
+        padding: 10px 20px;
     }
 
     .food-item {
-        flex-direction: column;
-        text-align: center;
+        width: 110px;
+        height: 160px;
+        padding: 10px;
     }
 
-    .food-time {
-        margin-left: 0;
-        margin-top: 5px;
+    .food-image-container {
+        height: 80px;
+    }
+
+    .food-image {
+        height: 60px;
+    }
+
+    .food-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .food-name {
+        font-size: 14px;
+    }
+
+    .food-expiry {
+        font-size: 12px;
+    }
+
+    .carousel-control {
+        width: 30px;
+        height: 30px;
     }
 }

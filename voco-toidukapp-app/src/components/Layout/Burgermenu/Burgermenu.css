@@ -1,0 +1,122 @@
+.burger-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 999;
+  }
+  
+  .burger-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .burger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: transform 0.3s;
+    transform: translateX(100%);
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .burger-menu.open {
+    transform: translateX(0);
+  }
+  
+  .burger-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+  }
+  
+  .burger-menu-logo {
+    height: 57px;
+    width: 113px;
+    margin-top: 40px;
+    margin-left: 19px;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+    color: #021A1A;
+    margin-right: 21px;
+    margin-top: 40px;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--component-default, 16px);
+    align-self: stretch;
+    height: 28px;
+    width: 307px;
+    margin-top: 41px;
+    margin-left: 36px;
+  }
+  
+  .menu-item {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 16px;
+    border: 1px solid var(--Primary-500, #03624C);
+    background: transparent;
+    box-shadow: 4px 4px 6px 0px rgba(0, 59, 35, 0.15);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .heart-icon-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 215px;
+  }
+  
+  .heart-icon-circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ring-icon {
+    position: absolute;
+    width: 135px;
+    height: 135px;
+    z-index: -1;
+    top: -50px;
+  }
+  
+  .heart-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+  }
